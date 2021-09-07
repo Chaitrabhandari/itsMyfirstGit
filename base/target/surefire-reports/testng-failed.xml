@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="projectname.base.linteners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="projectname.base.testcases">
+        <methods>
+          <include name="open"/>
+          <include name="close"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- projectname.base.testcases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)" verbose="0">
+    <classes>
+      <class name="projectname.base.testcase3">
+        <methods>
+          <include name="testcase"/>
+          <include name="open"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- projectname.base.testcase3 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
