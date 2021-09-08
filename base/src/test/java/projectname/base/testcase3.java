@@ -27,7 +27,9 @@ public class testcase3 extends open {
 		driver = openbrowser();
 		 driver.get(prop.getProperty("url"));
 		 Log.info("the browser started");
-		
+		 System.out.println("Hii i added thses new lines");
+		 System.out.println("These code works finally");
+			
 	}
 	
 	@Test
